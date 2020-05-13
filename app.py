@@ -15,6 +15,10 @@ app = Flask(__name__)
 @app.route("/")
 def main_page():
      return render_template('mainpage.html')
+ 
+@app.route("/Pre-Med")
+def pre_med():
+    return render_template('pre-med.html')
 
 #start the server
 if __name__ == "__main__":
