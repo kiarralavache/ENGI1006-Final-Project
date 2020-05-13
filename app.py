@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
-
-@author: etill
-"""
+#*************************************************
+# Kiarra Lavache
+# kal2241
+# ENGI1006
+# Final Project
+#*************************************************
 
 #import statements
 from flask import Flask, render_template
@@ -19,6 +19,10 @@ def main_page():
 @app.route("/Pre-Med")
 def pre_med():
     return render_template('pre-med.html')
+
+@app.route("/The Real Talk Initiative")
+def real_talk():
+    return render_template('realtalk.html')
 
 #start the server
 if __name__ == "__main__":
